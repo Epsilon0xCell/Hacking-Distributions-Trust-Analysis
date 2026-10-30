@@ -6,6 +6,10 @@
 
 This repository contains PDF research reports that analyze the trustworthiness of several hacking and penetration testing distributions. The reports consider developer identity and history, development practices, security history, community perception, and mechanisms for verifying distribution integrity.
 
+## Why I did this research
+
+I wrote these reports because I had to pick a hacking distribution for my own setup, and I did not want to pick on reputation alone. Each report asks the same questions about a different distribution: who makes it, can I verify what I download, and what has gone wrong before. The recommendation section at the end is where I landed for my own machines. It is my opinion, and it is not part of the reports themselves.
+
 ## Contents
 
 All seven PDFs in this repository are listed below. Page counts and text layer status were verified with pdfinfo and pdftotext on 2026-10-30.
