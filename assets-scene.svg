@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%">
+<rect width="1200" height="260" fill="#c4ccbc"/><rect x="60" y="36" width="120" height="26" fill="#28241e"/><rect x="60" y="30" width="120" height="8" fill="#568040"/><rect x="210" y="36" width="120" height="26" fill="#28241e"/><rect x="210" y="30" width="120" height="8" fill="#568040"/><rect x="360" y="36" width="120" height="26" fill="#28241e"/><rect x="360" y="30" width="120" height="8" fill="#568040"/><rect x="510" y="36" width="120" height="26" fill="#28241e"/><rect x="510" y="30" width="120" height="8" fill="#568040"/><rect x="660" y="36" width="120" height="26" fill="#28241e"/><rect x="660" y="30" width="120" height="8" fill="#568040"/><rect x="810" y="36" width="120" height="26" fill="#28241e"/><rect x="810" y="30" width="120" height="8" fill="#568040"/><rect x="960" y="36" width="120" height="26" fill="#28241e"/><rect x="960" y="30" width="120" height="8" fill="#568040"/>
+<rect y="86" width="1200" height="90" fill="#3e548c"/>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;150 0" dur="30s" repeatCount="indefinite"/>
+<polygon points="480,150 720,150 680,196 520,196" fill="#60462c"/><ellipse cx="600" cy="146" rx="46" ry="12" fill="#28241e"/>
+<line x1="520" y1="160" x2="470" y2="132" stroke="#78643c" stroke-width="7"><animateTransform attributeName="transform" type="rotate" values="-6 520 160;8 520 160;-6 520 160" dur="5s" repeatCount="indefinite"/></line>
+<path d="M520 196 Q600 214 680 196" stroke="#aabeDC" stroke-width="3" fill="none" opacity="0.8"/></g>
+<g fill="#79a866"><rect x="120" y="196" width="200" height="10"><animate attributeName="height" values="10;22;10" dur="14s" repeatCount="indefinite"/></rect></g>
+<circle cx="180" cy="226" r="6" fill="#a4342c"><animate attributeName="cy" values="226;218;226" dur="7s" repeatCount="indefinite"/></circle>
+<path d="M0 244 Q300 236 600 244 T1200 244" stroke="#8aa0cc" stroke-width="4" fill="none"><animate attributeName="d" values="M0 244 Q300 236 600 244 T1200 244;M0 244 Q300 252 600 244 T1200 244;M0 244 Q300 236 600 244 T1200 244" dur="8s" repeatCount="indefinite"/></path>
+</svg>
