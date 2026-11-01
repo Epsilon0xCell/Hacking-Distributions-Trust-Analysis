@@ -63,7 +63,7 @@ The following is the author opinion from the original README, kept as opinion an
 
 - BlackArch is rated low trust in the original summary line of this README. See the BlackArch PDF for the full reasoning, which covers package signing issues, a past website malware incident, and the absence of independent security audits alongside experienced contributors.
 - ParrotOS: the author does not prefer it, citing theme and that it is not as mainstream or industry standard as Kali Linux, which can matter for management approval.
-- Homelab suggestion: Parallels Desktop Windows base with Coherence Mode, an AtlasOS install and CommandoVM, combined with Kali Linux Win-KeX seamless mode, to combine Windows tools and Kali Linux tools in one environment.
+- Homelab suggestion: Parallels Desktop Windows base with Coherence Mode, an AtlasOS install and CommandoVM, combined with Kali Linux Win-KeX, to combine Windows tools and Kali Linux tools in one environment.
 - Kali Linux is the author recommendation for critical production environments, citing the toolset and the stable environment.
 
 ## License
