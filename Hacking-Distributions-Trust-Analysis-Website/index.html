@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hacking Distributions Trust Analysis: seven reports along one channel</title>
+<title>Hacking Distributions Trust Analysis: the evidence corkboard</title>
 <meta name="description" content="Seven PDF reports on the trustworthiness of hacking distributions, written because one distribution had to be chosen and reputation alone was not accepted as a reason.">
 <style>
-@font-face { font-family: Alef; src: url(fonts/Alef-Regular.ttf); } @font-face { font-family: AlefB; src: url(fonts/Alef-Bold.ttf); }
-@font-face { font-family: AlegreyaSans; src: url(fonts/AlegreyaSans-Regular.ttf); }
-:root { --woad:#3e548c; --iron:#28241e; --parch:#e8dcb6; --madder:#a4342c; }
-* { box-sizing:border-box; } body { margin:0; background:#dfe3d2; color:var(--iron); font-family:AlegreyaSans, sans-serif; line-height:1.6; }
-h1,h2,h3 { font-family:AlefB, Alef, sans-serif; } header { padding:2.2rem 5vw 1rem; background:#c9d2ba; }
-header img.banner { width:100%; height:auto; border:4px solid var(--iron); } .logo { width:88px; height:88px; }
-.tag { display:inline-block; background:var(--parch); border:2px solid #60462c; border-top:8px solid #60462c; padding:.45rem .9rem; margin:.25rem; color:var(--iron); text-decoration:none; font-family:AlefB; transition:transform .15s; }
-.tag:hover { transform:rotate(-3deg); } .tag:active { transform:translateY(4px); } .tag:focus-visible { outline:3px solid var(--woad); }
-main { max-width:1020px; margin:0 auto; padding:1rem 5vw 3rem; position:relative; }
-main::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:14px; background:var(--woad); opacity:.5; }
-.bed { background:var(--parch); border:6px solid #a8986c; outline:3px solid var(--iron); padding:1rem 1.3rem; margin:1.6rem 0; width:46%; position:relative; }
-.bed.left { margin-right:auto; } .bed.right { margin-left:auto; }
-.bed h3 { background:var(--iron); color:var(--parch); padding:.4rem .6rem; margin:-.4rem -.6rem .8rem; font-size:1rem; }
-.bed.warn { border-color:var(--madder); } table { border-collapse:collapse; width:100%; } td { border-bottom:1px solid #a8986c; padding:.3rem .5rem; }
-.post { background:#f2ecd8; border:2px solid var(--woad); padding:1rem 1.3rem; margin:2rem auto; max-width:640px; position:relative; }
-.verdict { border:4px solid var(--madder); background:var(--parch); padding:1rem 1.4rem; margin:2rem 0; position:relative; }
-pre.code { background:#101014; color:#e8e6df; padding:1rem; overflow-x:auto; font-size:.82rem; }
-.shots { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); } .shots img { width:100%; height:auto; background:#f4f1e8; }
-a { color:var(--woad); } footer { padding:1.6rem 5vw; } section.rel { position:relative; }
-@media (max-width:760px) { .bed { width:92%; } main::before { left:8px; } }
+@font-face{font-family:'Black Ops One';src:url('fonts/BlackOpsOne-Regular.ttf') format('truetype')}
+@font-face{font-family:'Newsreader';src:url('fonts/Newsreader-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Newsreader';src:url('fonts/Newsreader-Bold.ttf') format('truetype');font-weight:700}
+:root{--cork:#b98d54;--corkdark:#8a6538;--manila:#efe0ba;--graphite:#33383e;--ink:#26221c;--string:#b3312a}
+*{box-sizing:border-box}
+body{margin:0;background:#3a3e44;color:var(--ink);font-family:'Newsreader',serif;font-size:1.08rem;line-height:1.6}
+h1,h2,h3{font-family:'Black Ops One',sans-serif;font-weight:400;letter-spacing:.02em}
+header{padding:2.2rem 5vw 1rem;background:linear-gradient(180deg,#c49a5e,#a97e46);color:#241c10}
+header img.banner{width:100%;height:auto;border:5px solid var(--graphite);box-shadow:0 8px 22px rgba(0,0,0,.45)}
+.logo{width:88px;height:88px;border:3px solid var(--graphite)}
+.tag{display:inline-block;background:var(--manila);border:2px solid #6d5327;border-top:9px solid var(--string);padding:.45rem .9rem;margin:.25rem;color:var(--ink);text-decoration:none;font-family:'Black Ops One',sans-serif;font-size:.82rem;transition:transform .15s}
+.tag:hover{transform:rotate(-2deg)}
+.tag:active{transform:translateY(3px)}
+.tag:focus-visible{outline:3px solid var(--string)}
+main{max-width:1020px;margin:0 auto;padding:1rem 5vw 3rem;position:relative}
+main::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--string);opacity:.65}
+.bed{background:var(--manila);border:5px solid var(--corkdark);outline:3px solid var(--graphite);padding:1rem 1.3rem;margin:1.6rem 0;width:46%;position:relative;box-shadow:0 8px 18px rgba(0,0,0,.35)}
+.bed.left{margin-right:auto}.bed.right{margin-left:auto}
+.bed h3{background:var(--graphite);color:var(--manila);padding:.4rem .6rem;margin:-.4rem -.6rem .8rem;font-size:.95rem}
+.bed.warn{border-color:var(--string)}
+table{border-collapse:collapse;width:100%}td{border-bottom:1px solid #b39a67;padding:.3rem .5rem}
+.post{background:#f4ecd4;border:2px solid var(--graphite);padding:1rem 1.3rem;margin:2rem auto;max-width:640px;position:relative;box-shadow:0 8px 18px rgba(0,0,0,.3)}
+.verdict{border:4px solid var(--string);background:var(--manila);padding:1rem 1.4rem;margin:2rem 0;position:relative}
+pre.code{background:#14161a;color:#e8e2d2;padding:1rem;overflow-x:auto;font-size:.84rem;border-left:5px solid var(--string)}
+.shots{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.shots img{width:100%;height:auto;background:#efe9da;border:2px solid var(--graphite)}
+a{color:#8e241e}
+footer{padding:1.6rem 5vw;color:#c9cdd4}
+section.rel{position:relative}
+@media (max-width:760px){.bed{width:92%}main::before{left:8px}}
 </style></head><body>
 <header>
-<img class="logo" src="assets/logo.png" alt="Hacking Distributions Trust Analysis logo"><img class="banner" src="assets/banner.png" alt="">
+<img class="logo" src="assets/logo.png" alt="Hacking Distributions Trust Analysis logo: a square of cork board with one manila card pinned at its center, three red strings running from the pin to the card corners, on graphite grey"><img class="banner" src="assets/banner.png" alt="A large corkboard with six manila report cards pinned in a row, red strings connecting shared points between them, a magnifier and a blank evidence tag resting below">
 <h1>Hacking Distributions Trust Analysis</h1>
 <p>Seven PDF reports, written because one hacking distribution had to be chosen for the author&apos;s own setup, and reputation alone was not accepted as a reason.</p>
 <nav aria-label="on this page"><a class="tag" href="#run">Run it</a><a class="tag" href="#files">The files</a><a class="tag" href="#sheets">The sheets</a><a class="tag" href="https://github.com/Epsilon0xCell/Hacking-Distributions-Trust-Analysis">The repo</a></nav>

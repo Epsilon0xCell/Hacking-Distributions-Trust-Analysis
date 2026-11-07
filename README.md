@@ -1,8 +1,10 @@
-![Introduction banner](intro-banner.png)
+![Introduction: one report card lifted at the corner by a gloved hand, a second older card hidden beneath it, the red string pulled taut between their pins, cork and manila tones, investigative corkboard photography](intro-banner.png)
 
 # Hacking Linux Distributions Trust Analysis
 
-![Hacking-Distributions-Trust-Analysis banner](banner.png)
+<p align="center"><img src="logo.png" alt="Hacking-Distributions-Trust-Analysis logo: a square of cork board with one manila card pinned at its center, three red strings running from the pin to the card's corners, graphite grey background" width="200"></p>
+
+![Hacking-Distributions-Trust-Analysis banner: a large corkboard with six manila report cards pinned in a row, red strings connecting shared points between them, a magnifier and a blank evidence tag resting below, cork tan and graphite tones](banner.png)
 
 <img src="assets-scene.svg" alt="Animated themed scene" width="100%">
 
